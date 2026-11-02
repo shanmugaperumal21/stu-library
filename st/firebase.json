@@ -1,0 +1,31 @@
+{
+  "functions": {
+    "source": "functions",
+    "runtime": "nodejs22"
+  },
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      ".firebaserc",
+      "**/.*",
+      "**/node_modules/**",
+      "README.md",
+      "**/.env*",
+      "package.json",
+      "package-lock.json",
+      "server.js",
+      "mongodb-atlas.js",
+      "functions/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/api/mongodb/**",
+        "function": {
+          "functionId": "mongodbApi",
+          "region": "us-central1"
+        }
+      }
+    ]
+  }
+}

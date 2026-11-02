@@ -1,0 +1,22 @@
+{
+  "name": "student-management-app",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Student management application with Firebase Authentication and CRUD operations",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.js",
+    "dev": "node --env-file-if-exists=.env server.js"
+  },
+  "keywords": [
+    "student",
+    "management",
+    "firebase",
+    "auth"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^7.7.0"
+  }
+}
